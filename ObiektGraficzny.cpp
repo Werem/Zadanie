@@ -28,6 +28,14 @@ void ObiektGraficzny::InicjalizujKsztalt()
   _TabWierz[4][0] = -30;  _TabWierz[4][1]=  30;
   _TabWierz[5][0] =   0;  _TabWierz[5][1]=  30;
   _TabWierz[6][0] =  30;  _TabWierz[6][1]=   0;
+
+  _Globalne[0][0] =   0;  _Globalne[0][1] = 0;
+  _Globalne[1][0] =  30;  _Globalne[1][1] = 0;
+  _Globalne[2][0] =   0;  _Globalne[2][1] = -30;
+  _Globalne[3][0] = -30;  _Globalne[3][1] = -30;
+  _Globalne[4][0] = -30;  _Globalne[4][1] = 30;
+  _Globalne[5][0] =   0;  _Globalne[5][1] = 30;
+  _Globalne[6][0] =  30;  _Globalne[6][1] = 0;
   _Skala = 1.0f;
 }
 
@@ -58,6 +66,13 @@ void ObiektGraficzny::ZmienPolozenie(double x, double y)
 }
 void ObiektGraficzny::ZmienKat(float kat) { _Kat = kat; };
 void ObiektGraficzny::ZmienSkale(float skala) { _Skala = skala; }
+
+//void ObiektGraficzny::SprawdzGranice(float& vX, float& vY) {
+//	for (const Wektor2D& W_glob : _Globalne) 
+//	{
+//		if(W_glob[0] < )
+//	}
+//}
 
 /*!
  * Zapisuje do strumienia współrzędne globalne wierzchołków

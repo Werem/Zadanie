@@ -54,7 +54,6 @@ class ObiektGraficzny {
    * \brief Metoda zapisuje do pliku współrzędne wierzchołków
    */
    bool ZapiszDoPliku(const char* sNazwaPliku) const;
-   //void SprawdzGranice(float& vX, float& vY);
   /*!
    * \brief Metoda zapisuje do strumienia współrzędne wierzchołków
    */   
